@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i&display=swap&subset=cyrillic-ext,latin-ext');
+.wrapper
+{
+    width: 60%;
+    margin: 0 auto;
+
+    .myform
+    {
+        margin-left: 100px;
+        margin-top: 40px;
+        h1
+        {
+            background:#4CAF50;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    
+    form
+    {
+        background: #ddd;
+        
+        input,select
+        {
+            border: 1px solid #4CAF50;
+            width: 40%;
+            
+        }
+
+        button
+        {
+            text-align: center;
+            display: block;
+            margin-left: 2em;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+       
+    }
+}

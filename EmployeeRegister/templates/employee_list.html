@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{%block CSS%}
+<link rel="stylesheet" href="{% static 'css/employee_list.css' %}">
+{%endblock CSS %}
+{% block title%}
+Employee|LIst
+{% endblock title%}
+
+
+{% block content%}
+ 
+<div class="wrapper"> 
+
+  <h1>Employee Information System</h1>
+<table class="table table-borderless">
+  <thead class="border-bottom font-weight-bold">
+<td>full Name</td>
+<td>Mobile</td>
+<td>Position</td>
+<td>Emp-Code</td>
+<td>
+  <a href="{% url 'employeeForm' %}" class="btn text-success">
+    <i class="fa fa-plus fa-lg"></i> Add New
+  </a>
+</td>
+
+  </thead>
+
+  <tbody>
+      {% for employee in employee_list %}
+      <tr> 
+      <td>{{employee.fullName}}</td>
+      <td>{{employee.mobileNo}}</td>
+      <td>{{employee.position}}</td>
+      <td>{{employee.emp_code}}</td>
+      <td>
+        <a style="display: inline;" href="{% url 'employee_update' employee.id %}" class="btn text-success px-0">
+          <i class="fa fa-edit fa-lg"></i>Edit
+        </a>
+        <form action="{% url 'employee_delete' employee.id%}">
+          <button class="btn text-success" style="display: inline;" type="submit" class="btn">
+            <i class="fa fa-trash"></i>
+            Del
+          </button>
+        </form>
+      </td>
+    </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+</div>
+{% endblock content%}

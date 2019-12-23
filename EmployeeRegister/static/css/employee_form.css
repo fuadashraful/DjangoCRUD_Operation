@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i&display=swap&subset=cyrillic-ext,latin-ext");
+.wrapper {
+  width: 60%;
+  margin: 0 auto; }
+  .wrapper .myform {
+    margin-left: 100px;
+    margin-top: 40px; }
+    .wrapper .myform h1 {
+      background: #4CAF50;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      color: #fff; }
+  .wrapper form {
+    background: #ddd; }
+    .wrapper form input, .wrapper form select {
+      border: 1px solid #4CAF50;
+      width: 40%; }
+    .wrapper form button {
+      text-align: center;
+      display: block;
+      margin-left: 2em;
+      padding: 5px 10px;
+      margin-bottom: 10px; }
+
+/*# sourceMappingURL=employee_form.css.map */

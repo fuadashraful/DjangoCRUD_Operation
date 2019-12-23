@@ -1,0 +1,9 @@
+
+1. pip install --upgrade django-crispy-forms
+if you already have then update crispy forms
+2. pip3 install --upgrade django-crispy-forms
+
+3. Superuser (id: admin password : admin)
+
+4 .Activate virtual environment using - 
+source venv/bin/activate
