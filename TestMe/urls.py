@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 
+admin.site.site_header="XodeChemsist Admin"
+admin.site.site_title="Chemsit admin"
+admin.site.index_title="Index Page"
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^employee/',include('EmployeeRegister.urls')),
